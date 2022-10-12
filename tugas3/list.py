@@ -6,11 +6,11 @@ while True:
     pengarang = input('Nama Pengarang :')
     tahun = input('Tahun Terbit :')
     buku = [judul, pengarang, tahun]
-    jawab=input('ketik dat lagi = ? (y/n)')
+    jawab=input('ketik data lagi = ? (y/n)')
     if jawab=="n":
         break
     rak_buku.insert(index, buku)
     index += 1
     # print all data and its index
     for i in range(len(rak_buku)):
-        print(index, rak_buku[i])
+        print(i+1, rak_buku[i])
