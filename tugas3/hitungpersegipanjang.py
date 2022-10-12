@@ -1,5 +1,6 @@
 # membuat header
 import os
+again = ""
 os.system("cls")
 print(f"{'PROGRAM MENGHITUNG LUAS':^40}")
 print(f"{'DAN KELILITNG PERSEGI PANJANG':^40}")
@@ -21,11 +22,12 @@ def main():
     l = int(input("Masukkan lebar: "))
     print(f"Luas = {luas(p, l)}")
     print(f"Keliling = {keliling(p, l)}")
-    again = input("Hitung lagi? (y/n) ")
-    if again == "y":
-        main()
-    else:
-        print("Terima kasih")
-        return False
+    
 
-main()
+while True:
+    main()
+    again = input("Hitung lagi? (y/n) ")
+    if again == "n":
+        break
+    again = ""
+    print("Terima kasih")
