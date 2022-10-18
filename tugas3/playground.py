@@ -10,7 +10,7 @@
 # print(text)
 
 mahasiswa = {
-    '0074' : 'dimas',
+    "0074" : 'dimas',
     '0044' : 'fajar',
     '0104' : 'febi'
 }
