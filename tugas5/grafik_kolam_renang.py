@@ -21,9 +21,11 @@ grafik.show()
 # menghitung persentase tiap data
 porcent = 100.*data_pengunjung/data_pengunjung.sum()
 patches = grafik.pie(data_pengunjung, shadow=True, startangle=90)[0]
-# store the return value from pie() in a variable
 
+# format label yang akan ditampilkan pada legenda
 labels = ['{0} - {1:.2f} %'.format(bulan_val,porcent_val) for bulan_val,porcent_val in zip(bulan, porcent)]
+
+# menampilkan legenda
 grafik.legend(patches, labels, loc='best', bbox_to_anchor=(-0.1, 1.),
 fontsize=8)
 
